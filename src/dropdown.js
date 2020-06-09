@@ -5,6 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -90,9 +91,9 @@ export default function ControlledOpenSelect() {
         </Select>
       </FormControl>
     </div>
-    <div> <Button href="./SecondPage" variant="contained" size="medium" color="primary" className={classes.margin}>
-          Next
-        </Button></div>
+    <div> <Link to="/Next"><Button href="./SecondPage" variant="contained" size="medium" color="primary" className={classes.margin}>
+          Next 
+        </Button></Link></div>
     </div>
   );
 }
